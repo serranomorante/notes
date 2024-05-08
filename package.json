@@ -1,0 +1,6 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "build": "sed -i 's/\r$//g' ./setup.sh && ./setup.sh && jekyll build"
+  }
+}

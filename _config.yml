@@ -1,0 +1,27 @@
+# Setting name and title fixes duplicated header issue
+name: serranomorante
+title: notes - serranomorante
+plugins:
+  - jekyll-katex
+  - jekyll-default-layout
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-optional-front-matter
+  - jekyll-pandoc
+  - jekyll-relative-links
+markdown: Pandoc
+theme: jekyll-theme-primer
+# The GitHub repository that we are hosting our foam workspace from
+repository: serranomorante/foam
+# Generate permalinks in format specified in: https://jekyllrb.com/docs/permalinks/#built-in-formats
+permalink: /:categories/:year/:month/:day/:slug:output_ext
+pandoc:
+  extensions:
+    - mathjax
+    - filter: mermaid-filter
+    - bibliography: myrefs.public.bib
+katex:
+  rendering_options:
+    # Default KaTeX rendering options. See https://github.com/Khan/KaTeX#rendering-options
+    # Do not throw error at build but when rendering
+    throw_error: false

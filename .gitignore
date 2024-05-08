@@ -1,0 +1,33 @@
+# Ignore everything
+# Thanks: https://stackoverflow.com/a/24678813
+*
+
+!*/
+
+!/public/**/*
+
+!_layouts/*
+
+!_includes/*
+
+!assets/css/*
+
+!*.public.md
+!_config.yml
+!.gitignore
+!/Gemfile
+!package.json
+!setup.sh
+!extractcss.sh
+!slugify.sh
+!.puppeteer.json
+# README files will always be public no matter if they have
+# the `.public.md` or not.
+!README.md
+!*.public.bib
+
+*.plist
+_site
+.jekyll-cache
+.vscode
+.foam

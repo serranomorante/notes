@@ -1,0 +1,5 @@
+bibliography: [../myrefs.public.bib]
+output:
+  custom_document:
+    path: output.pdf
+    pandoc_args: ["--mathjax", "--pdf-engine=weasyprint", "--filter=mathjax-pandoc-filter"]
